@@ -1,0 +1,10 @@
+{
+    "name": "OTB TensorFlow GPU",
+    "image": "mdl4eo/otbtf:3.4.0-gpu",
+    "runArgs": [
+        "--gpus", "all",
+        "--runtime=nvidia"
+    ],
+    "remoteUser": "tfuser",
+    "postCreateCommand": "python3 -m pip install -r requirements.txt"
+}
